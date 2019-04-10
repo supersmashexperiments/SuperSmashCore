@@ -6,7 +6,7 @@
 
   <groupId>io.github.supersmashexperiments</groupId>
   <artifactId>kit</artifactId>
-  <version>0.2.3</version>
+  <version>0.3.0</version>
 
   <name>Super Smash Kit</name>
   <description>Provides an interface for modelling kits that players can have equipped.</description>

@@ -1,17 +1,15 @@
 package io.github.supersmashexperiments.kit;
 
-import java.util.List;
-
 public class SuperSmashKit {
-  private final List<Ability> abilities;
+  private final Abilities abilities;
   private final Armor armor;
 
-  public SuperSmashKit(List<Ability> abilities, Armor armor) {
+  public SuperSmashKit(Abilities abilities, Armor armor) {
     this.armor = armor;
     this.abilities = abilities;
   }
 
-  public List<Ability> getAbilities() {
+  public Abilities getAbilities() {
     return this.abilities;
   }
 

@@ -60,4 +60,19 @@ public class Tag {
   public String toString() {
     return this.creator + delimiter + this.kitName;
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null) return false;
+    if (this.getClass() != o.getClass()) return false;
+    Tag other = (Tag) o;
+
+    return this.toString().equals(other.toString());
+  }
+
+  @Override
+  public int hashCode() {
+    return this.toString().hashCode();
+  }
 }

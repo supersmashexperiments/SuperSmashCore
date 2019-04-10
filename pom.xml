@@ -6,7 +6,7 @@
 
   <groupId>io.github.supersmashexperiments</groupId>
   <artifactId>kit</artifactId>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
 
   <name>Super Smash Kit</name>
   <description>Provides an interface for modelling kits that players can have equipped.</description>
@@ -51,6 +51,16 @@
 
   <build>
     <defaultGoal>install</defaultGoal>
+
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+        <includes>
+          <include>plugin.yml</include>
+        </includes>
+      </resource>
+    </resources>
 
     <plugins>
       <plugin>

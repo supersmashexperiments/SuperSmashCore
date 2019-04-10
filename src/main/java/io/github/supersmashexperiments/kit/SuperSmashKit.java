@@ -1,19 +1,7 @@
 package io.github.supersmashexperiments.kit;
 
-public class SuperSmashKit {
-  private final Abilities abilities;
-  private final Armor armor;
+public interface SuperSmashKit {
+  public Abilities getAbilities();
 
-  public SuperSmashKit(Abilities abilities, Armor armor) {
-    this.armor = armor;
-    this.abilities = abilities;
-  }
-
-  public Abilities getAbilities() {
-    return this.abilities;
-  }
-
-  public Armor getArmor() {
-    return this.armor;
-  }
+  public Armor getArmor();
 }

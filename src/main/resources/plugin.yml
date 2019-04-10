@@ -1,0 +1,7 @@
+name: SuperSmashKit
+version: 0.0.0
+description: Provides an interface for modelling Super Smash Kits.
+author: George Bakewell
+main: io.github.supersmashexperiments.kit.Plugin
+depend: [  ]
+load: startup

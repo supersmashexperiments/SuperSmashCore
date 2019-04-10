@@ -6,7 +6,7 @@
 
   <groupId>io.github.supersmashexperiments</groupId>
   <artifactId>kit</artifactId>
-  <version>0.0.0</version>
+  <version>0.0.1</version>
 
   <name>Super Smash Kit</name>
   <description>Provides an interface for modelling kits that players can have equipped.</description>
@@ -25,6 +25,12 @@
       <groupId>com.destroystokyo.paper</groupId>
       <artifactId>paper-api</artifactId>
       <version>1.12.2-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>LibsDisguises</groupId>
+      <artifactId>LibsDisguises</artifactId>
+      <version>9.5.2</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>

@@ -1,0 +1,7 @@
+name: SuperSmashKit
+version: ${project.version}
+description: Provides an interface for modelling Super Smash Kits.
+author: George Bakewell
+main: io.github.supersmashexperiments.kit.Plugin
+depend: [ LibsDisguises ]
+load: startup

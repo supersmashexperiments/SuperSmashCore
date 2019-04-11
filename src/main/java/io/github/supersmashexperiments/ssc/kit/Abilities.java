@@ -1,4 +1,4 @@
-package io.github.supersmashexperiments.kit;
+package io.github.supersmashexperiments.ssc.kit;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.bukkit.Material;
 
-import io.github.supersmashexperiments.kit.exception.DuplicateHotbarItemMaterialException;
+import io.github.supersmashexperiments.ssc.kit.exception.DuplicateHotbarItemMaterialException;
 
 public class Abilities implements Iterable<Ability> {
   private final HashMap<Material, Ability> itemAbilities;

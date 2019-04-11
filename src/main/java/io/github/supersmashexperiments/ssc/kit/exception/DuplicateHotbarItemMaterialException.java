@@ -1,4 +1,4 @@
-package io.github.supersmashexperiments.kit.exception;
+package io.github.supersmashexperiments.ssc.kit.exception;
 
 import org.bukkit.Material;
 

@@ -1,6 +1,6 @@
-package io.github.supersmashexperiments.kit;
+package io.github.supersmashexperiments.ssc.kit;
 
-import io.github.supersmashexperiments.kit.exception.InvalidTagException;
+import io.github.supersmashexperiments.ssc.kit.exception.InvalidTagException;
 
 public class Tag {
   private static final String delimiter = "/";

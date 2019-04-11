@@ -1,6 +1,6 @@
-package io.github.supersmashexperiments.kit.exception;
+package io.github.supersmashexperiments.ssc.kit.exception;
 
-import io.github.supersmashexperiments.kit.Tag;
+import io.github.supersmashexperiments.ssc.kit.Tag;
 
 public class KitNotFoundException extends Exception {
   private final Tag tag;

@@ -1,4 +1,4 @@
-package io.github.supersmashexperiments.kit.exception;
+package io.github.supersmashexperiments.ssc.kit.exception;
 
 public class InvalidTagException extends Exception {
   private final String tag;

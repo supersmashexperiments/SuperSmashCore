@@ -1,4 +1,4 @@
-package io.github.supersmashexperiments.kit;
+package io.github.supersmashexperiments.ssc.kit;
 
 public interface SuperSmashKit {
   public Abilities getAbilities();

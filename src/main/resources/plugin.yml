@@ -1,0 +1,6 @@
+name: SuperSmashCore
+version: ${project.version}
+description: The backbone of any super smash game.
+author: George Bakewell
+main: io.github.supersmashexperiments.ssc.Plugin
+depend: [ SuperSmashKit ]

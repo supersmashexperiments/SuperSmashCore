@@ -1,7 +1,6 @@
-name: SuperSmashKit
+name: SuperSmashCore
 version: ${project.version}
-description: Provides an interface for modelling Super Smash Kits.
+description: The backbone of any super smash game.
 author: George Bakewell
-main: io.github.supersmashexperiments.kit.Plugin
+main: io.github.supersmashexperiments.ssc.Plugin
 depend: [ LibsDisguises ]
-load: startup

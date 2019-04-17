@@ -43,4 +43,15 @@ public class EventRegistrar implements Listener {
     SmashEventExecutor executor = eventHandler.getExecutor();
     executorList.remove(executor);
   }
+
+  @EventHandler
+  public void createDoubleJumpEvent(PlayerToggleFlightEvent event) {
+    DoubleJumpEvent doubleJumpEvent = new DoubleJumpEvent(event.getPlayer());
+
+    for (SmashEventExecutor eventExecutor : handlers.get(DoubleJumpEvent.class)) {
+      eventExecutor.execute(doubleJumpEvent);
+    }
+
+    event.setCancelled(true);
+  }
 }

@@ -16,6 +16,8 @@ public class Controller {
   }
 
   public static void equip(Player player, SuperSmashKit kit) {
+    PlayerStateManager.store(player);
+
     for (Ability ability : kit.getAbilities()) {
       SmashEventHandler[] eventHandlers = ability.getEventHandlers();
 

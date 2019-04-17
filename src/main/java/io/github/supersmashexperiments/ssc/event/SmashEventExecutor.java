@@ -1,5 +1,5 @@
 package io.github.supersmashexperiments.ssc.event;
 
-public interface SmashEventExecutor<T extends SmashEvent> {
-  public void execute(T event);
+public interface SmashEventExecutor {
+  public void execute(SmashEvent event);
 }

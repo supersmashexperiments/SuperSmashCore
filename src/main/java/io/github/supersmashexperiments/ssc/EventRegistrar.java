@@ -3,6 +3,7 @@ package io.github.supersmashexperiments.ssc;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerToggleFlightEvent;
@@ -48,7 +49,12 @@ public class EventRegistrar implements Listener {
   public void createDoubleJumpEvent(PlayerToggleFlightEvent event) {
     DoubleJumpEvent doubleJumpEvent = new DoubleJumpEvent(event.getPlayer());
 
-    for (SmashEventExecutor eventExecutor : handlers.get(DoubleJumpEvent.class)) {
+    LinkedHashSet<SmashEventExecutor> doubleJumpEventExecutors = handlers.get(DoubleJumpEvent.class);
+
+    if (doubleJumpEventExecutors == null)
+      return;
+
+    for (SmashEventExecutor eventExecutor : doubleJumpEventExecutors) {
       eventExecutor.execute(doubleJumpEvent);
     }
 

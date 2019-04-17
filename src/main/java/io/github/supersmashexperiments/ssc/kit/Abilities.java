@@ -19,7 +19,7 @@ public final class Abilities implements Iterable<Ability> {
     this.nonItemAbilities = new ArrayList<Ability>();
   }
 
-  public Abilities(Iterable<Ability> abilities) throws DuplicateHotbarItemMaterialException {
+  public Abilities(Iterable<Ability> abilities) throws DuplicateAbilityItemMaterialException {
     this.itemAbilities = new HashMap<>();
     this.nonItemAbilities = new ArrayList<Ability>();
 
@@ -28,7 +28,7 @@ public final class Abilities implements Iterable<Ability> {
     }
   }
 
-  private void add(Ability ability) throws DuplicateHotbarItemMaterialException {
+  private void add(Ability ability) throws DuplicateAbilityItemMaterialException {
     AbilityItem abilityItem = ability.getAbilityItem();
 
     if (abilityItem == null) {
@@ -36,7 +36,7 @@ public final class Abilities implements Iterable<Ability> {
     } else {
       Material abilityItemMaterial = abilityItem.getMaterial();
       if (this.itemAbilities.get(abilityItemMaterial) != null) {
-        throw new DuplicateHotbarItemMaterialException(abilityItemMaterial);
+        throw new DuplicateAbilityItemMaterialException(abilityItemMaterial);
       } else {
         this.itemAbilities.put(abilityItem.getMaterial(), ability);
       }

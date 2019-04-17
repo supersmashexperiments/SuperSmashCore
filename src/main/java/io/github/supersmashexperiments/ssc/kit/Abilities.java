@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.bukkit.Material;
 
-import io.github.supersmashexperiments.ssc.kit.exception.DuplicateHotbarItemMaterialException;
+import io.github.supersmashexperiments.ssc.kit.exception.DuplicateAbilityItemMaterialException;
 
 public final class Abilities implements Iterable<Ability> {
   private final HashMap<Material, Ability> itemAbilities;

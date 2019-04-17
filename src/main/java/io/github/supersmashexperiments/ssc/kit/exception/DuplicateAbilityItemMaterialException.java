@@ -2,11 +2,11 @@ package io.github.supersmashexperiments.ssc.kit.exception;
 
 import org.bukkit.Material;
 
-public class DuplicateHotbarItemMaterialException extends Exception {
+public class DuplicateAbilityItemMaterialException extends Exception {
   private final Material material;
 
-  public DuplicateHotbarItemMaterialException(Material material) {
-    super("Two or more hotbar items are using the " + material + " material");
+  public DuplicateAbilityItemMaterialException(Material material) {
+    super("Two or more ability items are using the " + material + " material");
     this.material = material;
   }
 

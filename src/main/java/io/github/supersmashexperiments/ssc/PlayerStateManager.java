@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 public class PlayerStateManager {
   private static final HashMap<Player, PlayerState> playerStates = new HashMap<>();
 
-  public static void store(Player player) {
+  public static void save(Player player) {
     PlayerState playerState = new PlayerState();
     playerState.allowFlight = player.getAllowFlight();
     playerState.gameMode = player.getGameMode();

@@ -2,7 +2,7 @@ package io.github.supersmashexperiments.ssc.kit.exception;
 
 import org.bukkit.Material;
 
-public class DuplicateAbilityItemMaterialException extends Exception {
+public class DuplicateAbilityItemMaterialException extends RuntimeException {
   private final Material material;
 
   public DuplicateAbilityItemMaterialException(Material material) {

@@ -1,7 +1,19 @@
 package io.github.supersmashexperiments.ssc.kit;
 
-public interface SuperSmashKit {
-  public Abilities getAbilities();
+public class SuperSmashKit {
+  private final Abilities abilities;
+  private final Armor armor;
 
-  public Armor getArmor();
+  public SuperSmashKit(Abilities abilities, Armor armor) {
+    this.armor = armor;
+    this.abilities = abilities;
+  }
+
+  public Abilities getAbilities() {
+    return this.abilities;
+  }
+
+  public Armor getArmor() {
+    return this.armor;
+  }
 }

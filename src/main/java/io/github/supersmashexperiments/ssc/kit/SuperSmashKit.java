@@ -1,6 +1,6 @@
 package io.github.supersmashexperiments.ssc.kit;
 
-public class SuperSmashKit {
+public final class SuperSmashKit {
   private final Abilities abilities;
   private final Armor armor;
 

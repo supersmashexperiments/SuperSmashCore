@@ -2,7 +2,7 @@ package io.github.supersmashexperiments.ssc.kit;
 
 import org.bukkit.Material;
 
-public class Armor {
+public final class Armor {
   private final Material boots;
   private final Material leggings;
   private final Material chestplate;

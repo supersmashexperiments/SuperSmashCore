@@ -2,7 +2,7 @@ package io.github.supersmashexperiments.ssc.kit;
 
 import org.bukkit.Material;
 
-public class AbilityItem {
+public final class AbilityItem {
   private final Material material;
   private final int slot;
   private final String name;

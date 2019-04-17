@@ -2,7 +2,7 @@ package io.github.supersmashexperiments.ssc.kit;
 
 import java.util.List;
 
-public class Ability {
+public final class Ability {
   private final String name;
   private final String description;
   private final List<EventHandler> eventHandlers;

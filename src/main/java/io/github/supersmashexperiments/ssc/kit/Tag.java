@@ -2,7 +2,7 @@ package io.github.supersmashexperiments.ssc.kit;
 
 import io.github.supersmashexperiments.ssc.kit.exception.InvalidTagException;
 
-public class Tag {
+public final class Tag {
   private static final String delimiter = "/";
   private static final String creatorNamePattern = "[a-zA-Z_]{1,16}";
   private static final String kitNamePattern = "[a-zA-Z_]{1,16}";

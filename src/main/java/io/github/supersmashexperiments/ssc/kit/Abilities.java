@@ -10,7 +10,7 @@ import org.bukkit.Material;
 
 import io.github.supersmashexperiments.ssc.kit.exception.DuplicateHotbarItemMaterialException;
 
-public class Abilities implements Iterable<Ability> {
+public final class Abilities implements Iterable<Ability> {
   private final HashMap<Material, Ability> itemAbilities;
   private final List<Ability> nonItemAbilities;
 

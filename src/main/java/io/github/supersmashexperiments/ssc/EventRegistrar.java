@@ -31,4 +31,16 @@ public class EventRegistrar implements Listener {
       executorList.add(executor);
     }
   }
+
+  public void unregisterEventHandler(SmashEventHandler eventHandler) {
+    Class<? extends SmashEvent> eventClass = eventHandler.getEventClass();
+
+    LinkedHashSet<SmashEventExecutor> executorList = handlers.get(eventClass);
+
+    if (executorList == null)
+      return;
+
+    SmashEventExecutor executor = eventHandler.getExecutor();
+    executorList.remove(executor);
+  }
 }

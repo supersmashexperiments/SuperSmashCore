@@ -6,8 +6,8 @@ import io.github.supersmashexperiments.ssc.event.SmashEventHandler;
 import io.github.supersmashexperiments.ssc.kit.*;
 
 public class Controller {
-  private static EventRegistrar events = new EventRegistrar();
-  private Plugin plugin;
+  private static final EventRegistrar events = new EventRegistrar();
+  private final Plugin plugin;
 
   Controller(Plugin plugin) {
     this.plugin = plugin;

@@ -5,6 +5,7 @@ import java.util.HashMap;
 import org.bukkit.entity.Player;
 
 import io.github.supersmashexperiments.ssc.event.SmashEventHandler;
+import io.github.supersmashexperiments.ssc.inventory.*;
 import io.github.supersmashexperiments.ssc.kit.*;
 
 public class Controller {

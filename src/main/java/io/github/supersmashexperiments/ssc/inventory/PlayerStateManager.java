@@ -1,4 +1,4 @@
-package io.github.supersmashexperiments.ssc;
+package io.github.supersmashexperiments.ssc.inventory;
 
 import java.util.HashMap;
 

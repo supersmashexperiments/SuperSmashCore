@@ -47,7 +47,12 @@ public class EventRegistrar implements Listener {
 
   @EventHandler
   public void createDoubleJumpEvent(PlayerToggleFlightEvent event) {
-    DoubleJumpEvent doubleJumpEvent = new DoubleJumpEvent(event.getPlayer());
+    Player player = event.getPlayer();
+
+    if (!Controller.isControlling(player))
+      return;
+
+    DoubleJumpEvent doubleJumpEvent = new DoubleJumpEvent(player);
 
     LinkedHashSet<SmashEventExecutor> doubleJumpEventExecutors = handlers.get(DoubleJumpEvent.class);
 

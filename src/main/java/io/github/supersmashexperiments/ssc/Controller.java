@@ -49,4 +49,8 @@ public class Controller {
       }
     }
   }
+
+  public static boolean isControlling(Player player) {
+    return players.containsKey(player);
+  }
 }

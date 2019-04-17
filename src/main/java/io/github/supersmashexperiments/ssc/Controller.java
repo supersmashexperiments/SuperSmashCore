@@ -34,7 +34,7 @@ public class Controller {
   }
 
   public static void dekit(Player player) {
-    SuperSmashKit kit = players.get(player);
+    SuperSmashKit kit = players.remove(player);
 
     if (kit == null)
       return;

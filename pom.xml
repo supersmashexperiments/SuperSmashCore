@@ -6,7 +6,7 @@
 
   <groupId>io.github.supersmashexperiments</groupId>
   <artifactId>ssc</artifactId>
-  <version>0.5.3</version>
+  <version>0.5.4</version>
 
   <name>Super Smash Core</name>
   <description>Exposes an API for managing most compononents of the game, including

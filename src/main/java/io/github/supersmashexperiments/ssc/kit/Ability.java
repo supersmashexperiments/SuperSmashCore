@@ -1,14 +1,14 @@
 package io.github.supersmashexperiments.ssc.kit;
 
-import java.util.List;
+import io.github.supersmashexperiments.ssc.event.SmashEventHandler;
 
 public final class Ability {
   private final String name;
   private final String description;
-  private final List<EventHandler> eventHandlers;
+  private final SmashEventHandler[] eventHandlers;
   private final AbilityItem abilityItem;
 
-  public Ability(String name, String description, List<EventHandler> eventHandlers, AbilityItem abilityItem) {
+  public Ability(String name, String description, SmashEventHandler[] eventHandlers, AbilityItem abilityItem) {
     this.name = name;
     this.description = description;
     this.abilityItem = abilityItem;
@@ -27,7 +27,7 @@ public final class Ability {
     return this.abilityItem;
   }
 
-  public List<EventHandler> getEventHandlers() {
+  public SmashEventHandler[] getEventHandlers() {
     return this.eventHandlers;
   }
 }
